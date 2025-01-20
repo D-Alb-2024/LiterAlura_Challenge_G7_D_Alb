@@ -19,11 +19,9 @@ public class Autor {
     @Column(name = "fecha_fallecimiento")
     private Integer fechaFallecimiento;
 
-    // Relación One-to-Many con la clase Libro
-    @OneToMany(mappedBy = "autor") // Relación inversa, mapeada por el campo 'autor' en Libro
+    @OneToMany(mappedBy = "autor")
     private List<Libro> libros= new ArrayList<>();
 
-    // Constructor
     public Autor() {}
 
     public Autor(DatosAutor datosAutor){

@@ -60,15 +60,6 @@ public class Libro {
         this.autor = autor;
     }
 
-//    public List<String> getIdioma() {
-//        return idioma;
-//    }
-//
-//    public void setIdioma(List<String> idioma) {
-//        this.idioma = idioma;
-//    }
-
-
     public Idioma getIdioma() {
         return idioma;
     }
